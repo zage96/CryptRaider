@@ -44,5 +44,27 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	FVector Start = GetComponentLocation();
 	FVector End = Start + GetForwardVector()*MaxGrabDistance;
 	DrawDebugLine(GetWorld(),Start,End, FColor::Red);
+
+	FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
+	FHitResult HitResult;
+
+	//ECC_GameTraceChannel2 is hte name of the channel for Grabber, found on DefaultEngine.ini
+	bool HasHit = GetWorld()->SweepSingleByChannel(
+		HitResult,
+		Start,End, 
+		FQuat::Identity, 
+		ECC_GameTraceChannel2,
+		Sphere
+	);
+	
+	if(HasHit){
+		AActor* HitActor = HitResult.GetActor();
+		UE_LOG(LogTemp, Display, TEXT("Hit Actor: %s"), *HitActor->GetActorNameOrLabel());
+	}
+	else{
+		UE_LOG(LogTemp, Display, TEXT("No Actor Hit"));
+	}
+
 }
+
 
