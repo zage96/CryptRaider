@@ -11,10 +11,7 @@
 	],
 	"settings": {
 		"typescript.tsc.autoDetect": "off",
-		"npm.autoDetect": "off",
-		"files.associations": {
-			"*.rh": "cpp"
-		}
+		"npm.autoDetect": "off"
 	},
 	"extensions": {
 		"recommendations": [
@@ -135,10 +132,7 @@
 			},
 			{
 				"label": "CryptRaider Win64 Development Build",
-				"group": {
-					"kind": "build",
-					"isDefault": true
-				},
+				"group": "build",
 				"command": "Engine\\Build\\BatchFiles\\Build.bat",
 				"args": [
 					"CryptRaider",

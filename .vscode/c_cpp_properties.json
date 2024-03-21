@@ -6,7 +6,7 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Users\\ezara\\Documents\\GitHub\\CryptRaider\\CryptRaider\\.vscode\\compileCommands_CryptRaider.json"
+            "compileCommands": "C:\\Users\\ezara\\Documents\\GitHub\\CryptRaider\\.vscode\\compileCommands_CryptRaider.json"
         },
         {
             "name": "Win32",
@@ -14,12 +14,7 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Users\\ezara\\Documents\\GitHub\\CryptRaider\\CryptRaider\\.vscode\\compileCommands_Default.json",
-            "includePath": [
-                "${default}",
-                "C:/Program Files/Epic Games/UE_5.3/Engine/Source/Runtime/Engine/Classes",
-                "C:/Program Files/Epic Games/UE_5.3/Engine/Source/Runtime/Core/Public"
-            ]
+            "compileCommands": "C:\\Users\\ezara\\Documents\\GitHub\\CryptRaider\\.vscode\\compileCommands_Default.json"
         }
     ],
     "version": 4
