@@ -42,15 +42,13 @@ void UMover::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponent
 		FVector NewLocation = FMath::VInterpConstantTo(CurrentLocation, TargetLocation, DeltaTime, Speed);
 		GetOwner()->SetActorLocation(NewLocation);
 	}
-	
-
-
-
-	
-
-
 
 	//UE_LOG(LogTemp, Display, TEXT("Mover owner is %s with location %s"),*Name, *OwnerLocationString);
 	// ...
 }
 
+void UMover::SetShouldMove(bool NewShouldMove)
+{
+	ShouldMove = NewShouldMove;
+	return;
+}
